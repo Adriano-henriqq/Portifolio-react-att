@@ -1,0 +1,23 @@
+
+.toolbar{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.listaContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.logoPerfil{
+    width: 100px;
+    border-radius: 100%;
+    margin: 1rem;
+
+}
+
