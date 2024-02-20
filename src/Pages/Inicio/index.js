@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import {  Slide, ThemeProvider, Typography } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
-import imgMain from 'assets/profile-pic (3).png'
+import imgMain from '../../assets/profile-pic (3).png'
 
 export const theme = createTheme({
     palette: {

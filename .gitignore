@@ -21,15 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-
-# Arquivos e diretórios a serem ignorados
-Ambiente de Impressão/
-Ambiente de Rede/
-Configurações Locais/
-Cookies/
-Dados de Aplicativos/
-Documents/Meus Vídeos/
-Documents/Minhas Imagens/
-Documents/Minhas Músicas/
-# Adicione mais linhas conforme necessário
