@@ -5,6 +5,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Box, Button, CardActionArea, CardActions, Link } from '@mui/material';
+import gitIcon from 'assets/github.svg'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
+
 
 
 
@@ -36,9 +40,9 @@ export default function Cards({foto,alt,titulo,descricao,repoLink,siteLink,tecno
           </Link>
           
         </CardActionArea>
-        <CardActions sx={{display: 'flex', justifyContent:'space-around', alignItems: 'flex-end', p:3}}>
-           <Button color='info' variant='contained'><a className={styles.linkItem} href={repoLink}>Repositorio</a></Button>
-           <Button variant='contained' color='info' ><a className={styles.linkItem} href={siteLink}>acesse</a></Button>
+        <CardActions sx={{display: 'flex', justifyContent:'space-around', alignItems: 'center', p:3}}>
+           <Box display={'flex'} alignItems={'center'} gap={1}><GitHubIcon/>  <a className={styles.linkItem} href={repoLink}>Repositorio</a> </Box>
+           <Box display={'flex'} alignItems={'center'} gap={1} ><LinkIcon/> <a className={styles.linkItem} href={siteLink}>Prévia</a></Box>
         </CardActions>
       </Card>
  
