@@ -40,8 +40,8 @@ export default function Cards({foto,alt,titulo,descricao,repoLink,siteLink,tecno
           </Link>
           
         </CardActionArea>
-        <CardActions sx={{display: 'flex', justifyContent:'space-around', alignItems: 'center', p:3}}>
-           <Box display={'flex'} alignItems={'center'} gap={1}><GitHubIcon/>  <a className={styles.linkItem} href={repoLink}>Repositorio</a> </Box>
+        <CardActions sx={{display: 'flex', justifyContent:'space-between', alignItems: 'center', p:3}}>
+           <Box display={'flex'} alignItems={'center'} gap={1}><GitHubIcon/>  <a className={styles.linkItem} href={repoLink}>Repositório</a> </Box>
            <Box display={'flex'} alignItems={'center'} gap={1} ><LinkIcon/> <a className={styles.linkItem} href={siteLink}>Prévia</a></Box>
         </CardActions>
       </Card>
