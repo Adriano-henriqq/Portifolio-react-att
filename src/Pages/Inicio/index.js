@@ -37,7 +37,7 @@ export default function Inicio() {
             <div className={styles.tituloContainer}>
             <Slide timeout={3000}  appear in direction='right' >
                 <div>
-                    <Typography  fontSize={'4rem'} fontWeight={'bold'} variant='h1'>Olá,👋 <br/>Meu nome é Adriano<br/> Henrique</Typography>
+                    <Typography  fontSize={'4rem'} fontWeight={'bold'} variant='h1'>Olá,✌️ <br/>Meu nome é Adriano<br/> Henrique</Typography>
                     <Slide timeout={2000}  appear in direction='right' >   
                     <Typography  variant='subtitle1' fontSize={'22px'}>Desenvolvedor Front-End</Typography>
                     </Slide>
