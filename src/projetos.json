@@ -4,8 +4,8 @@
     "descricao":"Parte visual De um sistema feito no EB para um envio de email,para os conscritos que faltaram a selecao geral do alistamento",
     "img":"/imagens/resgate-front.png",
     "link": "https://projeto-resgate-front.vercel.app/",
-    "repo": "https://github.com/Adriano-henriqq/projeto-resgate-front",
-    "tecnologias": "JavaScript, HTML, CSS, Express",
+    "repo": "https://github.com/Adriano-henriqq/projeto-resgate",
+    "tecnologias": "JavaScript, HTML, CSS, Express, Bootstrap",
     "id": 1
   },
   
