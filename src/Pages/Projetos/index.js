@@ -12,8 +12,8 @@ export default function Projetos() {
     <ThemeProvider theme={theme}>
       <CssBaseline>
         <Container  className={styles.scrollbarContainer} maxWidth='lg'>
-          <Typography textAlign={'center'} marginTop={'rem'} variant='h4'> Conheça meus projetos </Typography>
-          <Grid justifyContent={'center'} alignItems={'center'}  className={styles.container} margin={'1rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Typography textAlign={'center'}  variant='h4'> Conheça meus projetos </Typography>
+          <Grid justifyContent={'center'} alignItems={'center'}  className={styles.container} margin={'2rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
             {projetos.map((projeto) => (
                 <Grid className={styles.item} key={projeto.id} item xs={10} sm={7} md={5}>
                 <Cards

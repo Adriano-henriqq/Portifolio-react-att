@@ -21,17 +21,17 @@ export default function Cards({foto,alt,titulo,descricao,repoLink,siteLink,tecno
           />
          
           <CardContent >
-            <Typography  gutterBottom variant="h5">
+            <Typography  gutterBottom fontWeight={700} variant="h5">
               {titulo}
             </Typography>
-            <Typography sx={{color: '#d9d9d9', fontSize: 16, }} variant="body2" >
+            <Typography sx={{color: '#d9d9d9', fontSize: 16, fontWeight: 200 }} variant="body2" >
               {descricao}
             </Typography>
             <Box sx={{borderBottom: '1px solid lightGray', padding: '10px 0 0 0'}} > </Box>
-            <Typography sx={{color: '#d9d9d9'}} variant="h6" component='div' marginTop={2}>
+            <Typography sx={{color: '#d9d9d9', fontWeight:700}} variant="h6" component='div' marginTop={2}>
               Tecnologias: 
             </Typography>
-            <Typography variant='body2'>{tecnologias}</Typography>
+            <Typography fontWeight={200} variant='body2'>{tecnologias}</Typography>
           </CardContent>
           </Link>
           
