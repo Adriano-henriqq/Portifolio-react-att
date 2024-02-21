@@ -19,6 +19,28 @@
     "id": 2
 
 
+  },
+    {
+    "titulo": "Cadastro de Clientes para salao",
+    "descricao": "Projetinho simples para cadastro de cilentes, usado para treinar principios de JavaScript,html e css.",
+    "img":"/imagens/projeto-salao.png",
+    "link": "https://adriano-henriqq.github.io/Projeto-Salao/",
+    "repo": "https://github.com/Adriano-henriqq/Projeto-Salao",
+    "tecnologias": "JavaScript, HTML, CSS",
+    "id": 4
+
+
+  },
+    {
+    "titulo": "Cadastro de Clientes para salao",
+    "descricao": "Projetinho simples para cadastro de cilentes, usado para treinar principios de JavaScript,html e css.",
+    "img":"/imagens/projeto-salao.png",
+    "link": "https://adriano-henriqq.github.io/Projeto-Salao/",
+    "repo": "https://github.com/Adriano-henriqq/Projeto-Salao",
+    "tecnologias": "JavaScript, HTML, CSS",
+    "id": 3
+
+
   }
   
     

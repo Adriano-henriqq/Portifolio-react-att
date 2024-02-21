@@ -13,9 +13,9 @@ export default function Projetos() {
       <CssBaseline>
         <Container  className={styles.scrollbarContainer} maxWidth='lg'>
           <Typography textAlign={'center'} marginTop={'rem'} variant='h4'> Conheça meus projetos </Typography>
-          <Grid justifyContent={'center'} alignItems={'center'} gap={'1rem'}  className={styles.container} margin={'1rem'} container rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+          <Grid justifyContent={'center'} alignItems={'center'}  className={styles.container} margin={'1rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
             {projetos.map((projeto) => (
-                <Grid className={styles.item} key={projeto.id} item xs={11} sm={5}>
+                <Grid className={styles.item} key={projeto.id} item xs={10} sm={7} md={5}>
                 <Cards
                   foto={projeto.img}
                   titulo={projeto.titulo}

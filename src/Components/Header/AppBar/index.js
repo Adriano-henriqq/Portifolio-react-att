@@ -8,7 +8,7 @@ import styles from './AppBar.module.css'
 // import { ThemeProvider, createTheme } from '@mui/material';
 
 // export const Theme = createTheme({
-    
+
 //     palette:{
 //         primary: {
 //          main: '#1c1c1e'
@@ -66,7 +66,7 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -75,10 +75,10 @@ function ResponsiveAppBar() {
 
 
   return (
-    <AppBar sx={{backgroundColor: '#1c1c1e'}} elevation={0} position="static">
-      <Container   maxWidth="xl">
-        <Toolbar sx={{display: 'flex', justifyContent: 'space-around'}} disableGutters>
-        <Typography
+    <AppBar sx={{ backgroundColor: '#1c1c1e' }} elevation={0} position="static">
+      <Container maxWidth="xl">
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-around' }} disableGutters>
+          <Typography
             variant="img"
             noWrap
             component="a"
@@ -88,10 +88,10 @@ function ResponsiveAppBar() {
               display: { xs: 'none', md: 'flex' },
             }}
           >
-            <img src={logo} className={styles.logoPerfil} alt=''/>
+            <img src={logo} className={styles.logoPerfil} alt='' />
           </Typography>
 
-          <Box  sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -120,29 +120,31 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page,index) => (
+              {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <NavLink style={{textDecoration:'none'}} to={routes[index]}>{page}</NavLink>
+                  <NavLink style={{ textDecoration: 'none', color:'black' }} to={routes[index]}>{page}</NavLink>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page,index) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                <NavLink style={{textDecoration:'none',color: '#d9d9d9',paddingBottom: '1rem'}} to={routes[index]}>{page}</NavLink>  
-              </Button>
+
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap:5 }}>
+            {pages.map((page, index) => (
+                <NavLink style={({ isActive, isPending }) => {
+                  return {
+                    textDecoration: isActive ? "underline" : "none",
+                    color: isPending ? "#d9d9d9" : "#d9d9d9",
+                    fontSize: '18px'
+                  };
+                  
+                }} to={routes[index]}>{page}</NavLink>
+              
             ))}
           </Box>
           <Box >
-            <MenuContatos/>
-            </Box>      
-          
+            <MenuContatos />
+          </Box>
+
         </Toolbar>
       </Container>
     </AppBar>

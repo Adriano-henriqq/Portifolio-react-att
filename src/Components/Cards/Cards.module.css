@@ -1,6 +1,7 @@
 .linkItem{
     text-decoration: none;
-    color: #d5d5d5;
+    color: #f6f5f5;
+    font-weight: bold;
 }
 .cardHover{
     transition: 1s;
