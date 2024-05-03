@@ -9,7 +9,7 @@
     "id": 1
   },
   
-    {
+  {
     "titulo": "Cadastro de Clientes para salao",
     "descricao": "Projetinho simples para cadastro de cilentes, usado para treinar principios de JavaScript,html e css.",
     "img":"/imagens/projeto-salao.png",
@@ -17,9 +17,18 @@
     "repo": "https://github.com/Adriano-henriqq/Projeto-Salao",
     "tecnologias": "JavaScript, HTML, CSS",
     "id": 2
-
-
+    
+    
+  },
+  {
+  "titulo": "PokeList",
+  "descricao":"Proketo inspirado na famosa 'Pokedéx', usado para praticar consumo de apis e praticar React em class components ",
+  "img":"/imagens/pokelist .png",
+  "link": "https://poke-list-psi.vercel.app/",
+  "repo": "https://github.com/Adriano-henriqq/pokeList",
+  "tecnologias": "React(Class Components) ",
+  "id": 3
   }
   
-    
+  
 ] 
