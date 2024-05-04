@@ -23,7 +23,7 @@
   {
   "titulo": "PokeList",
   "descricao":"Proketo inspirado na famosa 'Pokedéx', usado para praticar consumo de apis e praticar React em class components ",
-  "img":"/imagens/pokelist .png",
+  "img":"/imagens/pokeList .png",
   "link": "https://poke-list-psi.vercel.app/",
   "repo": "https://github.com/Adriano-henriqq/pokeList",
   "tecnologias": "React(Class Components) ",
