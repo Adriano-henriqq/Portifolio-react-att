@@ -14,14 +14,16 @@ import LinkIcon from '@mui/icons-material/Link';
 
 export default function Cards({foto,alt,titulo,descricao,repoLink,siteLink,tecnologias}) {
     return (
-      <Card  sx={{maxWidth: '400px', height:'auto', borderRadius: 6, backgroundColor: '#2e2e30', color: '#d9d9d9'}}>
+      <Card  sx={{maxWidth: '400px', height:'100%', borderRadius: 6, backgroundColor: '#2e2e30', color: '#d9d9d9'}}>
         <CardActionArea>
         <Link href={siteLink} sx={{textDecoration:'none', color:'inherit'}}>
           <CardMedia
             component="img"
-            height="250px"
+            height="200px"
+        
             image={foto}
             alt={alt}
+            style={{objectFit:'cover'}}
           />
          
           <CardContent >

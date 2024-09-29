@@ -28,6 +28,15 @@
   "repo": "https://github.com/Adriano-henriqq/pokeList",
   "tecnologias": "React(Class Components) ",
   "id": 3
+  },
+  {
+  "titulo": "MyContacts",
+  "descricao":"Sistema para controle de contatos e estatisticas",
+  "img":"/imagens/mycontacts.png",
+  "link": "https://poke-list-psi.vercel.app/",
+  "repo": "https://github.com/Adriano-henriqq/my-contacts",
+  "tecnologias": "React, Material-UI e Highcharts ",
+  "id": 3
   }
   
   

@@ -4,31 +4,45 @@ import { theme } from 'Pages/Inicio'
 import Cards from 'Components/Cards'
 
 import projetos from '../../projetos.json'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 
 
 export default function Projetos() {
+  const [dadosRepository, setDadosRepository] = useState([])
+
+  const getProjetos = async () => {
+    const { data } = await axios.get('https://api.github.com/users/Adriano-henriqq/repos')
+    setDadosRepository([...data])
+  }
+
+  useEffect(() => {
+    getProjetos();
+  }, [])
+
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        <Container  className={styles.scrollbarContainer} maxWidth='lg'>
-          <Typography textAlign={'center'}  variant='h4'> Conheça meus projetos </Typography>
-          <Grid justifyContent={'center'} alignItems={'center'}  className={styles.container} margin={'2rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            {projetos.map((projeto) => (
-                <Grid className={styles.item} key={projeto.id} item xs={10} sm={7} md={5}>
+        <Container className={styles.scrollbarContainer} maxWidth='lg'>
+          <Typography textAlign={'center'} variant='h4'> Conheça meus projetos </Typography>
+          <Grid justifyContent={'center'} alignItems={'center'} className={styles.container} margin={'2rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            {dadosRepository.filter((repository) => repository.name === 'pokeList' || repository.name === 'my-contacts'|| repository.name === 'projeto-resgate').map((projeto) => (
+              <Grid className={styles.item} key={projeto.id} item xs={10} sm={7} md={4}>
                 <Cards
-                  foto={projeto.img}
-                  titulo={projeto.titulo}
-                  descricao={projeto.descricao}
-                  siteLink={projeto.link}
-                  repoLink={projeto.repo}
-                  tecnologias={projeto.tecnologias}
+                  foto={projetos.find((projetoJson)=> projetoJson.repo === projeto.html_url)?.img}
+                  titulo={projeto.name}
+                  descricao={projeto.description}
+                  siteLink={projeto.homepage}
+                  repoLink={projeto.html_url}
                   alt={'foto do projeto'}
+                  tecnologias={projetos.find((projetoJson)=> projetoJson.repo === projeto.html_url)?.tecnologias}
                 />
               </Grid>
             ))}
-            
-           
+
+
           </Grid>
         </Container>
       </CssBaseline>
