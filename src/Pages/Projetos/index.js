@@ -1,4 +1,4 @@
-import { Container, CssBaseline, Grid, ThemeProvider, Typography } from '@mui/material'
+import { Container, CssBaseline, Fade, Grid, ThemeProvider, Typography } from '@mui/material'
 import styles from './Projetos.module.css'
 import { theme } from 'Pages/Inicio'
 import Cards from 'Components/Cards'
@@ -14,7 +14,7 @@ export default function Projetos() {
 
   const getProjetos = async () => {
     const { data } = await axios.get('https://api.github.com/users/Adriano-henriqq/repos')
-    setDadosRepository([...data])
+    setDadosRepository(data)
   }
 
   useEffect(() => {
@@ -25,6 +25,7 @@ export default function Projetos() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
+      <Fade appear direction='left' timeout={1500} in>  
         <Container className={styles.scrollbarContainer} maxWidth='lg'>
           <Typography textAlign={'center'} variant='h4'> Conheça meus projetos </Typography>
           <Grid justifyContent={'center'} alignItems={'center'} className={styles.container} margin={'2rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -45,6 +46,7 @@ export default function Projetos() {
 
           </Grid>
         </Container>
+       </Fade> 
       </CssBaseline>
     </ThemeProvider>
   )

@@ -20,6 +20,7 @@ body{
 .listaIcones img{
     width: 120px;
     margin-top: 1rem;
+    transition: 1.5s;
 }
 
 .listaIcones img:hover{
