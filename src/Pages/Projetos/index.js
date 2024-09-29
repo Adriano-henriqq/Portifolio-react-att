@@ -28,7 +28,7 @@ export default function Projetos() {
       <Fade appear direction='left' timeout={1500} in>  
         <Container className={styles.scrollbarContainer} maxWidth='lg'>
           <Typography textAlign={'center'} variant='h4'> Conheça meus projetos </Typography>
-          <Grid justifyContent={'center'} alignItems={'center'} className={styles.container} margin={'2rem'} container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid justifyContent={'center'} alignItems={'center'} className={styles.container} margin={'2rem'} container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
             {dadosRepository.filter((repository) => repository.name === 'pokeList' || repository.name === 'my-contacts'|| repository.name === 'projeto-resgate').map((projeto) => (
               <Grid className={styles.item} key={projeto.id} item xs={10} sm={7} md={4}>
                 <Cards

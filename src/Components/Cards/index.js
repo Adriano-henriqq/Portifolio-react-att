@@ -34,10 +34,10 @@ export default function Cards({foto,alt,titulo,descricao,repoLink,siteLink,tecno
               {descricao}
             </Typography>
             <Box sx={{borderBottom: '1px solid lightGray', padding: '10px 0 0 0'}} > </Box>
-            <Typography sx={{color: '#d9d9d9', fontWeight:700}} variant="h6" component='div' marginTop={2}>
+            <Typography sx={{color: '#d9d9d9', fontWeight:700}} variant="h5" marginTop={2}>
               Tecnologias: 
             </Typography>
-            <Typography fontWeight={200} variant='body2'>{tecnologias}</Typography>
+            <Typography fontWeight={300} variant='body2'>{tecnologias}</Typography>
           </CardContent>
           </Link>
           
